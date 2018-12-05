@@ -24,7 +24,6 @@ import (
 	"runtime"
 	"strconv"
 	"strings"
-
 	"gopkg.in/natefinch/lumberjack.v2"
 
 	"github.com/xenolf/lego/acmev2"
@@ -35,6 +34,9 @@ import (
 
 	"github.com/mholt/caddy/caddytls"
 	// This is where other plugins get plugged in (imported)
+	_ "github.com/epicagency/caddy-expires"
+	_ "github.com/abiosoft/caddy-git"
+
 )
 
 func init() {
